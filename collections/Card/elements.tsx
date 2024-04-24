@@ -44,6 +44,7 @@ export const StyledCardHeading = styled(({hrefLink, ...props}: {hrefLink: string
     href={hrefLink}
     target={hrefLink === "#" ? "" : "_blank"}
     rel={hrefLink === "#" ? "" : "noopener noreferrer"}
+    style={{color: "black", textDecoration: "none"}}
   >
     <h2 {...props} />
   </Link>
@@ -51,7 +52,6 @@ export const StyledCardHeading = styled(({hrefLink, ...props}: {hrefLink: string
   font-size: 1.25rem;
   margin: 0;
   font-weight: bold;
-  cursor: pointer;
 
   @media screen and (max-width: 1024px) {
     font-size: 1rem;
