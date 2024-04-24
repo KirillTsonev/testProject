@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 import {makeBold} from "~/utils";
 
@@ -38,7 +39,15 @@ export const StyledCardTextContainer = styled(({...props}) => <div {...props} />
   font-family: Poppins;
 `;
 
-export const StyledCardHeading = styled(({...props}) => <h2 {...props} />)`
+export const StyledCardHeading = styled(({hrefLink, ...props}: {hrefLink: string}) => (
+  <Link
+    href={hrefLink}
+    target={hrefLink === "#" ? "" : "_blank"}
+    rel={hrefLink === "#" ? "" : "noopener noreferrer"}
+  >
+    <h2 {...props} />
+  </Link>
+))`
   font-size: 1.25rem;
   margin: 0;
   font-weight: bold;

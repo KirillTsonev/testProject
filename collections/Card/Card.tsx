@@ -19,7 +19,12 @@ export const Card = ({heading, desc, image, href, background, marginRight}: ICar
         />
       </StyledIconContainer>
       <StyledCardTextContainer>
-        <StyledCardHeading className="hoverHeading">{heading}</StyledCardHeading>
+        <StyledCardHeading
+          className="hoverHeading"
+          hrefLink={href}
+        >
+          {heading}
+        </StyledCardHeading>
         <StyledCardText desc={desc}>{desc}</StyledCardText>
       </StyledCardTextContainer>
     </StyledCardWrapper>
