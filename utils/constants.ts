@@ -9,6 +9,7 @@ export const mockCardData: IMockCardData[] = [
       alt: "Brief icon",
     },
     href: "https://goodbrief.io/",
+    background: "#F9F9F9",
   },
   {
     heading: "Search",
@@ -18,6 +19,7 @@ export const mockCardData: IMockCardData[] = [
       alt: "Search icon",
     },
     href: "#",
+    background: "#F4F4F4",
   },
   {
     heading: "Pitch",
@@ -27,6 +29,7 @@ export const mockCardData: IMockCardData[] = [
       alt: "Pitch icon",
     },
     href: "#",
+    background: "#F1F1F1",
   },
 ];
 

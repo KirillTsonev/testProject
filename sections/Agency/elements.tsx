@@ -34,9 +34,13 @@ export const StyledSubheading = styled((props: IGenericProps) => <SectionSubhead
 `;
 
 export const StyledContentContainer = styled(({backgroundUrl = "", ...props}) => <div {...props} />)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
   max-width: 1200px;
   width: 100%;
-  margin-top: 2rem;
+  padding: 2rem;
   background: url(${({backgroundUrl}) => backgroundUrl}) no-repeat;
   background-size: contain;
 
@@ -56,4 +60,6 @@ export const StyledCardsContainer = styled(({...props}) => <div {...props} />)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  max-width: 450px;
 `;

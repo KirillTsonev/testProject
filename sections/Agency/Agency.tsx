@@ -9,8 +9,9 @@ import {
   StyledSubheading,
   StyledContentContainer,
   StyledImageContainer,
+  StyledCardsContainer,
 } from "./elements";
-import {StyledCardContainer} from "~/collections/Card/elements";
+
 import {mockCardData, ISectionProps} from "~/utils";
 
 export const Agency: FC<ISectionProps> = ({title, description, backgroundUrl, image, ...props}) => {
@@ -29,12 +30,19 @@ export const Agency: FC<ISectionProps> = ({title, description, backgroundUrl, im
             height={image.height}
           />
         </StyledImageContainer>
-        <StyledCardContainer>
+        <StyledCardsContainer>
           {/* iterator in this case won't change, otherwise we'd use a unique ID */}
           {mockCardData.map((card, i) => (
-            <Card key={i}></Card>
+            <Card
+              key={i}
+              heading={card.heading}
+              desc={card.desc}
+              image={card.image}
+              href={card.href}
+              background={card.background}
+            />
           ))}
-        </StyledCardContainer>
+        </StyledCardsContainer>
       </StyledContentContainer>
     </StyledContainer>
   );

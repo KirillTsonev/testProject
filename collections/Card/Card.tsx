@@ -1,5 +1,23 @@
-import {StyledCardContainer} from "./elements";
+import Image from "next/image";
 
-export const Card = () => {
-  return <StyledCardContainer>Test</StyledCardContainer>;
+import {StyledCardHeading, StyledCardText, StyledCardTextContainer, StyledCardWrapper, StyledIconContainer} from "./elements";
+
+export const Card = ({heading, desc, image, href, background}) => {
+  return (
+    <StyledCardWrapper background={background}>
+      <StyledIconContainer>
+        <Image
+          layout="responsive"
+          src={image.src}
+          alt={image.alt}
+          width={50}
+          height={50}
+        />
+      </StyledIconContainer>
+      <StyledCardTextContainer>
+        <StyledCardHeading>{heading}</StyledCardHeading>
+        <StyledCardText>{desc}</StyledCardText>
+      </StyledCardTextContainer>
+    </StyledCardWrapper>
+  );
 };
