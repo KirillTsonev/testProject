@@ -40,6 +40,7 @@ export const Agency: FC<ISectionProps> = ({title, description, backgroundUrl, im
               image={card.image}
               href={card.href}
               background={card.background}
+              marginRight={card.marginRight}
             />
           ))}
         </StyledCardsContainer>

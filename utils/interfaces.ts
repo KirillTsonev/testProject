@@ -29,4 +29,5 @@ export interface IMockCardData {
   };
   href: string;
   background: string;
+  marginRight: string;
 }

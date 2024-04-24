@@ -3,33 +3,36 @@ import {IMockCardData, ISectionProps} from "./interfaces";
 export const mockCardData: IMockCardData[] = [
   {
     heading: "Brief",
-    desc: "Complete brief writing or simple guidance on what to include, we've got you covered",
+    desc: "Complete <strong>brief writing or simple guidance<strong> on what to include, we've got you covered.",
     image: {
       src: "/icons/brief.png",
       alt: "Brief icon",
     },
     href: "https://goodbrief.io/",
     background: "#F9F9F9",
+    marginRight: "40px",
   },
   {
     heading: "Search",
-    desc: "In-depth agency search covering; criteria matching, door knocking and due diligence vetting.",
+    desc: "In-depth agency search covering; <strong>criteria matching<strong>, door knocking and due diligence vetting.",
     image: {
       src: "/icons/search.png",
       alt: "Search icon",
     },
     href: "#",
     background: "#F4F4F4",
+    marginRight: "20px",
   },
   {
     heading: "Pitch",
-    desc: "Comprehensive pitch management, including comms, diary management and pitch hosting.",
+    desc: "Comprehensive <strong>pitch management<strong>, including comms, diary management and pitch hosting.",
     image: {
       src: "/icons/pitch.png",
       alt: "Pitch icon",
     },
     href: "#",
     background: "#F1F1F1",
+    marginRight: "0px",
   },
 ];
 

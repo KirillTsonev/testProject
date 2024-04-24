@@ -2,9 +2,12 @@ import Image from "next/image";
 
 import {StyledCardHeading, StyledCardText, StyledCardTextContainer, StyledCardWrapper, StyledIconContainer} from "./elements";
 
-export const Card = ({heading, desc, image, href, background}) => {
+export const Card = ({heading, desc, image, href, background, marginRight}) => {
   return (
-    <StyledCardWrapper background={background}>
+    <StyledCardWrapper
+      background={background}
+      marginRight={marginRight}
+    >
       <StyledIconContainer>
         <Image
           layout="responsive"
@@ -15,8 +18,8 @@ export const Card = ({heading, desc, image, href, background}) => {
         />
       </StyledIconContainer>
       <StyledCardTextContainer>
-        <StyledCardHeading>{heading}</StyledCardHeading>
-        <StyledCardText>{desc}</StyledCardText>
+        <StyledCardHeading className="hoverHeading">{heading}</StyledCardHeading>
+        <StyledCardText desc={desc}>{desc}</StyledCardText>
       </StyledCardTextContainer>
     </StyledCardWrapper>
   );

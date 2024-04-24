@@ -1,15 +1,22 @@
 import styled from "styled-components";
+import {makeBold} from "~/utils";
 
-export const StyledCardWrapper = styled(({background, ...props}) => <div {...props} />)`
+export const StyledCardWrapper = styled(({background, marginRight, ...props}) => <div {...props} />)`
   display: flex;
   align-items: center;
   background: ${({background}) => background};
   padding: 10px 30px;
   max-width: 100%;
   border-radius: 5px;
+  margin-right: ${({marginRight}) => marginRight};
 
   &:hover {
     outline: 2px solid #006efd;
+  }
+
+  &:hover .hoverHeading {
+    color: #006efd;
+    text-decoration: underline;
   }
 `;
 
@@ -32,13 +39,14 @@ export const StyledCardHeading = styled(({...props}) => <h2 {...props} />)`
   font-size: 1.25rem;
   margin: 0;
   font-weight: bold;
+  cursor: pointer;
 
   @media screen and (max-width: 1024px) {
     font-size: 1rem;
   }
 `;
 
-export const StyledCardText = styled(({...props}) => <p {...props} />)`
+export const StyledCardText = styled(({desc, ...props}) => <p {...props}>{makeBold(desc)}</p>)`
   font-size: 1rem;
   margin: 0;
 
