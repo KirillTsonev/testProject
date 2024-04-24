@@ -1,7 +1,7 @@
 import Image from "next/image";
-import {ISectionProps} from "~/utils";
 import {FC} from "react";
 
+import {ISectionProps} from "~/utils";
 import {
   StyledTextContainer,
   StyledContainer,
