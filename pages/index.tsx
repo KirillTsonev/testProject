@@ -4,6 +4,7 @@ import {ReactElement} from "react";
 
 import {heroProps, agencyProps} from "~/utils";
 import {Hero, Agency} from "../sections";
+import {Header} from "~/collections/Header";
 
 export default function Home(): ReactElement {
   return (
@@ -22,6 +23,7 @@ export default function Home(): ReactElement {
           rel="stylesheet"
         />
       </Head>
+      <Header />
       <div>
         <Hero {...heroProps} />
         <Agency {...agencyProps} />
