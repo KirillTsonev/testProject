@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import {Button, SectionContainer, SectionBigHeading, SectionSubheading} from "~/components";
+import {IGenericProps} from "~/utils";
 
-export const StyledContainer = styled(({height, ...props}) => <SectionContainer {...props} />)`
+export const StyledContainer = styled(({height, ...props}: {height: string; props: IGenericProps}) => <SectionContainer {...props} />)`
   align-items: center;
 `;
 
-export const StyledGetStartedBtn = styled((props) => (
+export const StyledGetStartedBtn = styled((props: IGenericProps) => (
   <Button
     {...props}
     variant="contained"
@@ -17,12 +18,12 @@ export const StyledGetStartedBtn = styled((props) => (
   padding-bottom: 0;
 `;
 
-export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
+export const StyledTitle = styled((props: IGenericProps) => <SectionBigHeading {...props} />)`
   margin: 0;
   color: black;
 `;
 
-export const StyledDescription = styled((props) => <SectionSubheading {...props} />)`
+export const StyledDescription = styled((props: IGenericProps) => <SectionSubheading {...props} />)`
   margin: 1.563rem 0 0;
 `;
 

@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components";
 import {SectionInnerHeading} from "~/components";
+import {IGenericProps} from "~/utils";
 
 const outlinedVariantButton = css`
   background-color: transparent;
@@ -18,7 +19,7 @@ const containedVariantButton = css`
   background-color: ${({theme, color}) => theme[color]};
 
   &:hover {
-    background-color: ${({theme, color}) => theme.hover[color]};
+    background-color: ${({theme, color}) => theme.hover[color as keyof typeof theme.hover]};
   }
 `;
 
@@ -61,7 +62,7 @@ export const StyledButton = styled(({color = "primary", variant = "contained", .
   cursor: pointer;
   border: none;
   color: white;
-  ${({variant}) => buttonVariants[variant]}
+  ${({variant}) => buttonVariants[variant as keyof typeof buttonVariants]}
 `;
 
-export const StyledButtonText = styled((props) => <SectionInnerHeading {...props} />)``;
+export const StyledButtonText = styled((props: IGenericProps) => <SectionInnerHeading {...props} />)``;

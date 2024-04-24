@@ -1,9 +1,11 @@
 /* eslint-disable react/display-name */
 import {forwardRef} from "react";
 import styled from "styled-components";
+import {IGenericProps} from "~/utils";
+import {LegacyRef} from "react";
 
 export const StyledSectionBigHeading = styled(
-  forwardRef((props, ref) => (
+  forwardRef((props, ref: LegacyRef<HTMLHeadingElement>) => (
     <h1
       {...props}
       ref={ref}
@@ -17,7 +19,7 @@ export const StyledSectionBigHeading = styled(
 `;
 
 export const StyledSectionHeading = styled(
-  forwardRef((props, ref) => (
+  forwardRef((props, ref: LegacyRef<HTMLHeadingElement>) => (
     <h2
       {...props}
       ref={ref}
@@ -31,7 +33,7 @@ export const StyledSectionHeading = styled(
 `;
 
 export const StyledSectionSubheading = styled(
-  forwardRef((props, ref) => (
+  forwardRef((props, ref: LegacyRef<HTMLHeadingElement>) => (
     <h3
       {...props}
       ref={ref}
@@ -45,7 +47,7 @@ export const StyledSectionSubheading = styled(
 `;
 
 export const StyledSectionInnerHeading = styled(
-  forwardRef((props, ref) => (
+  forwardRef((props, ref: LegacyRef<HTMLHeadingElement>) => (
     <h4
       {...props}
       ref={ref}
@@ -59,7 +61,7 @@ export const StyledSectionInnerHeading = styled(
 `;
 
 export const StyledSectionTinyHeading = styled(
-  forwardRef((props, ref) => (
+  forwardRef((props, ref: LegacyRef<HTMLHeadingElement>) => (
     <h5
       {...props}
       ref={ref}
@@ -72,7 +74,7 @@ export const StyledSectionTinyHeading = styled(
   font-weight: 300;
 `;
 
-export const StyledSectionParagraph = styled((props) => <p {...props} />)`
+export const StyledSectionParagraph = styled((props: IGenericProps) => <p {...props} />)`
   font-family: Poppins;
   font-size: 1rem;
   line-height: 1.5rem;

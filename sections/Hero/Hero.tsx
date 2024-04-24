@@ -1,4 +1,6 @@
 import Image from "next/image";
+import {IHero} from "~/utils";
+import {FC} from "react";
 
 import {
   StyledTextContainer,
@@ -10,7 +12,7 @@ import {
   StyledImageContainer,
 } from "./elements";
 
-export const Hero = ({image, title, description, ctaText, ...props}) => {
+export const Hero: FC<IHero> = ({image, title, description, ctaText, ...props}) => {
   return (
     <StyledContainer {...props}>
       <StyledTextContainer>
