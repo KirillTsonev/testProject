@@ -23,7 +23,7 @@ export default function Home(): ReactElement {
           rel="stylesheet"
         />
       </Head>
-      <Header />
+      <Header position={"fixed"} />
       <div>
         <Hero {...heroProps} />
         <Agency {...agencyProps} />
