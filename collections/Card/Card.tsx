@@ -1,8 +1,9 @@
 import Image from "next/image";
 
 import {StyledCardHeading, StyledCardText, StyledCardTextContainer, StyledCardWrapper, StyledIconContainer} from "./elements";
+import {ICardProps} from "~/utils";
 
-export const Card = ({heading, desc, image, href, background, marginRight}) => {
+export const Card = ({heading, desc, image, href, background, marginRight}: ICardProps) => {
   return (
     <StyledCardWrapper
       background={background}

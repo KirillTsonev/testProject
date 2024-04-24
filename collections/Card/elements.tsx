@@ -1,7 +1,10 @@
 import styled from "styled-components";
+
 import {makeBold} from "~/utils";
 
-export const StyledCardWrapper = styled(({background, marginRight, ...props}) => <div {...props} />)`
+export const StyledCardWrapper = styled(({background, marginRight, ...props}: {background: string; marginRight: string}) => (
+  <div {...props} />
+))`
   display: flex;
   align-items: center;
   background: ${({background}) => background};
@@ -46,7 +49,7 @@ export const StyledCardHeading = styled(({...props}) => <h2 {...props} />)`
   }
 `;
 
-export const StyledCardText = styled(({desc, ...props}) => <p {...props}>{makeBold(desc)}</p>)`
+export const StyledCardText = styled(({desc, ...props}: {desc: string}) => <p {...props}>{makeBold(desc)}</p>)`
   font-size: 1rem;
   margin: 0;
 

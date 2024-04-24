@@ -31,3 +31,15 @@ export interface IMockCardData {
   background: string;
   marginRight: string;
 }
+
+export interface ICardProps {
+  heading: string;
+  desc: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+  href: string;
+  background: string;
+  marginRight: string;
+}
