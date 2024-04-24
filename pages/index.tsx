@@ -1,20 +1,8 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import {Hero} from "../sections";
+import {Hero, Agency} from "../sections";
 import Head from "next/head";
-import {IHero} from "~/utils";
 import {ReactElement} from "react";
-
-const heroProps: IHero = {
-  image: {
-    src: "/img/heroimg.png",
-    alt: "",
-    width: 1000,
-    height: 1680,
-  },
-  title: "Agency procurement, outsourced.",
-  description: "Start the process here",
-  ctaText: "Start",
-};
+import {heroProps} from "~/utils";
 
 export default function Home(): ReactElement {
   return (
@@ -35,7 +23,7 @@ export default function Home(): ReactElement {
       </Head>
       <div>
         <Hero {...heroProps} />
-        {/** Other sections */}
+        <Agency />
       </div>
     </>
   );

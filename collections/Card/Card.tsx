@@ -1,1 +1,5 @@
-// The Card to be exported goes here
+import {StyledCardContainer} from "./elements";
+
+export const Card = () => {
+  return <StyledCardContainer>Test</StyledCardContainer>;
+};
