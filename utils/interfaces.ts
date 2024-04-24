@@ -18,3 +18,13 @@ export interface IHero {
 export interface IGenericProps {
   [x: string]: any;
 }
+
+export interface IMockCardData {
+  heading: string;
+  desc: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+  href: string;
+}
