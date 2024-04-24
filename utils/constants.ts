@@ -1,4 +1,4 @@
-import {IMockCardData, IHero} from "./interfaces";
+import {IMockCardData, ISectionProps} from "./interfaces";
 
 export const mockCardData: IMockCardData[] = [
   {
@@ -30,7 +30,7 @@ export const mockCardData: IMockCardData[] = [
   },
 ];
 
-export const heroProps: IHero = {
+export const heroProps: ISectionProps = {
   image: {
     src: "/img/heroimg.png",
     alt: "",
@@ -40,4 +40,16 @@ export const heroProps: IHero = {
   title: "Agency procurement, outsourced.",
   description: "Start the process here",
   ctaText: "Start",
+};
+
+export const agencyProps: ISectionProps = {
+  image: {
+    src: "/img/video.png",
+    alt: "",
+    width: 300,
+    height: 470,
+  },
+  title: "Managed agency selection",
+  description: "Strengthen your onboarding process",
+  backgroundUrl: "/img/background.png",
 };

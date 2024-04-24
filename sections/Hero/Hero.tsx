@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {IHero} from "~/utils";
+import {ISectionProps} from "~/utils";
 import {FC} from "react";
 
 import {
@@ -12,7 +12,7 @@ import {
   StyledImageContainer,
 } from "./elements";
 
-export const Hero: FC<IHero> = ({image, title, description, ctaText, ...props}) => {
+export const Hero: FC<ISectionProps> = ({image, title, description, ctaText, ...props}) => {
   return (
     <StyledContainer {...props}>
       <StyledTextContainer>

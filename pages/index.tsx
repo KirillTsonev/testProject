@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import {Hero, Agency} from "../sections";
 import Head from "next/head";
 import {ReactElement} from "react";
-import {heroProps} from "~/utils";
+
+import {heroProps, agencyProps} from "~/utils";
+import {Hero, Agency} from "../sections";
 
 export default function Home(): ReactElement {
   return (
@@ -23,7 +24,7 @@ export default function Home(): ReactElement {
       </Head>
       <div>
         <Hero {...heroProps} />
-        <Agency />
+        <Agency {...agencyProps} />
       </div>
     </>
   );

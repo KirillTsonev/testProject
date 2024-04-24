@@ -2,7 +2,7 @@ export interface IChildren {
   children: string | JSX.Element | JSX.Element[] | (() => JSX.Element);
 }
 
-export interface IHero {
+export interface ISectionProps {
   image: {
     src: string;
     alt: string;
@@ -11,7 +11,8 @@ export interface IHero {
   };
   title: string;
   description: string;
-  ctaText: string;
+  ctaText?: string;
+  backgroundUrl?: string;
   [x: string]: any;
 }
 
