@@ -1,5 +1,5 @@
 import styled, {css} from "styled-components";
-import {SectionInnerHeading} from "~/components";
+import {SectionInnerHeading} from "~/components/Typography/SectionInnerHeading";
 import {IGenericProps} from "~/utils";
 
 const outlinedVariantButton = css`

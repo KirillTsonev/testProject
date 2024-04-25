@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-import {SectionContainer, SectionHeading, SectionSubheading} from "~/components";
+// import {SectionContainer, SectionHeading, SectionSubheading} from "~/components";
+import {SectionContainer} from "~/components/Containers/SectionContainer/SectionContainer";
+import {SectionHeading} from "~/components/Typography/SectionHeading";
+import {SectionSubheading} from "~/components/Typography/SectionSubheading";
 import {IGenericProps} from "~/utils";
 
 export const StyledContainer = styled(({height, ...props}: {height: string; props: IGenericProps}) => <SectionContainer {...props} />)`

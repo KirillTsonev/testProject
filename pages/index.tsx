@@ -4,7 +4,7 @@ import {ReactElement} from "react";
 
 import {heroProps, agencyProps} from "~/utils";
 import {Hero, Agency} from "../sections";
-import {Header} from "~/collections/Header";
+import {Header} from "~/collections";
 
 export default function Home(): ReactElement {
   return (
