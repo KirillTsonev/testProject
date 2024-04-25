@@ -14,4 +14,8 @@ export const StyledHeaderButtons = styled(({...props}) => <div {...props} />)`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 1024px) {
+    width: 50%;
+  }
 `;
