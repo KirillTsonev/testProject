@@ -10,7 +10,7 @@ import {StyledHeaderWrapper, StyledHeaderButtons} from "./elements";
 
 export const Header = ({position}: {position: string}) => {
   const pathname = usePathname();
-  console.log(pathname);
+
   return (
     <StyledHeaderWrapper position={position}>
       <SignedOut>

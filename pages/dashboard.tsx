@@ -1,5 +1,5 @@
 import {ReactElement} from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import {Button} from "~/components/ui/button";
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "~/components/ui/card";
@@ -21,18 +21,12 @@ export default function Dashboard(): ReactElement {
       <>
         <div className="md:hidden">
           <Image
-            src="/examples/dashboard-light.png"
+            src="/img/dashboard.png"
             width={1280}
             height={866}
             alt="Dashboard"
             className="block dark:hidden"
-          />
-          <Image
-            src="/examples/dashboard-dark.png"
-            width={1280}
-            height={866}
-            alt="Dashboard"
-            className="hidden dark:block"
+            priority
           />
         </div>
         <div className="hidden flex-col md:flex">
