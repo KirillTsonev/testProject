@@ -11,6 +11,7 @@ export const StyledContainer = styled(({height, ...props}: IGenericProps) => <Se
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 50px 0;
 `;
 
 export const StyledHeaderContainer = styled(({...props}) => <div {...props} />)`

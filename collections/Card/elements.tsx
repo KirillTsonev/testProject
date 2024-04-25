@@ -28,7 +28,7 @@ export const StyledIconContainer = styled(({...props}) => <div {...props} />)`
   max-height: 3.25rem;
   width: 100%;
   height: 100%;
-  padding-right: 30px;
+  margin-right: 30px;
 `;
 
 export const StyledCardTextContainer = styled(({...props}) => <div {...props} />)`

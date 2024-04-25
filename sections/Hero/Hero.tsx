@@ -29,6 +29,7 @@ export const Hero: FC<ISectionProps> = ({image, title, description, ctaText, ...
           alt={image.alt}
           width={image.width}
           height={image.height}
+          priority
         />
       </StyledImageContainer>
     </StyledContainer>

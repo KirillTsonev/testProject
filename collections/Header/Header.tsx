@@ -8,11 +8,11 @@ import {StyledButton} from "~/components/Button/elements";
 
 import {StyledHeaderWrapper, StyledHeaderButtons} from "./elements";
 
-export const Header = ({position}: {position: string}) => {
+export const Header = () => {
   const pathname = usePathname();
 
   return (
-    <StyledHeaderWrapper position={position}>
+    <StyledHeaderWrapper>
       <SignedOut>
         <SignInButton>
           <StyledButton

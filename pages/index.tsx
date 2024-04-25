@@ -4,11 +4,11 @@ import {ReactElement} from "react";
 
 import {heroProps, agencyProps} from "~/utils";
 import {Hero, Agency} from "../sections";
-import {Header} from "~/collections";
+import {Layout} from "~/components/Layout";
 
 export default function Home(): ReactElement {
   return (
-    <>
+    <Layout>
       <Head>
         <link
           rel="preconnect"
@@ -23,11 +23,10 @@ export default function Home(): ReactElement {
           rel="stylesheet"
         />
       </Head>
-      <Header position={"fixed"} />
       <div>
         <Hero {...heroProps} />
         <Agency {...agencyProps} />
       </div>
-    </>
+    </Layout>
   );
 }
