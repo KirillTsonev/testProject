@@ -4,10 +4,9 @@ import {SectionBigHeading} from "~/components/Typography/SectionBigHeading";
 import {SectionContainer} from "~/components/Containers/SectionContainer";
 import {Button} from "~/components/Button/Button";
 import {SectionSubheading} from "~/components/Typography/SectionSubheading";
-// import {Button, SectionContainer, SectionBigHeading, SectionSubheading} from "~/components";
 import {IGenericProps} from "~/utils";
 
-export const StyledContainer = styled(({height, ...props}: {height: string; props: IGenericProps}) => <SectionContainer {...props} />)`
+export const StyledContainer = styled(({height, ...props}: IGenericProps) => <SectionContainer {...props} />)`
   align-items: center;
 `;
 

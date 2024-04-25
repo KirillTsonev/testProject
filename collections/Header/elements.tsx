@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const StyledHeaderWrapper = styled(({position, ...props}: {position: string}) => <header {...props} />)`
+import {IGenericProps} from "~/utils";
+
+export const StyledHeaderWrapper = styled(({position, ...props}: IGenericProps) => <header {...props} />)`
   position: ${({position}) => position};
   width: 100%;
   background: #f1f1f1;

@@ -6,7 +6,7 @@ import {SectionHeading} from "~/components/Typography/SectionHeading";
 import {SectionSubheading} from "~/components/Typography/SectionSubheading";
 import {IGenericProps} from "~/utils";
 
-export const StyledContainer = styled(({height, ...props}: {height: string; props: IGenericProps}) => <SectionContainer {...props} />)`
+export const StyledContainer = styled(({height, ...props}: IGenericProps) => <SectionContainer {...props} />)`
   display: flex;
   justify-content: center;
   align-items: center;
