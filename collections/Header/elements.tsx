@@ -7,6 +7,7 @@ export const StyledHeaderWrapper = styled(({position, ...props}: {position: stri
   padding: 20px 0;
   display: flex;
   justify-content: center;
+  z-index: 10;
 `;
 
 export const StyledHeaderButtons = styled(({...props}) => <div {...props} />)`
